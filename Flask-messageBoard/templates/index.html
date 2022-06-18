@@ -1,0 +1,17 @@
+<img src="https://liuyan.people.com.cn/img/MAIN/2016/12/117070/images/logo.png">
+
+<form method="post">
+    <label>请输入留言内容：</label>
+    <input name="message" placeholder="请输入内容：">
+    <button>提交</button>
+</form>
+
+<!--在模板里面加载数据-->
+<!--{{ data }}-->
+<!--有序列表 -->
+
+<ol>
+    {% for info in data %}
+    <li>{{ info }}</li>
+    {% endfor %}
+</ol>
